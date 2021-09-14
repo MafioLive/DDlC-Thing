@@ -1,2 +1,2 @@
 # DDLCMODDEV
- My custom DDLC CODE
+Doki Doki Encore Mod... yeah ikr
