@@ -573,9 +573,9 @@ Not all good times must come to an end."""
 
 image paper = "images/bg/poem.jpg"
 image paper_glitch = LiveComposite((1280, 720), (0, 0), "paper_glitch1", (0, 0), "paper_glitch2")
-image paper_glitch1 = "images/bg/poem-glitch1.png"
+image paper_glitch1 = "/hxppy thxughts.png"
 image paper_glitch2:
-    "images/bg/poem-glitch2.png"
+    "/hxppy thxughts.png"
     block:
         yoffset 0
         0.05

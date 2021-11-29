@@ -11,11 +11,11 @@ While running game code:
     python:
   File "renpy/common/00console.rpy", line 694, in <module>
     console.interact()
-  File "renpy/common/00console.rpy", line 275, in interact
-    line = ui.interact()
-  File "renpy/common/00action_control.rpy", line 81, in __call__
-    renpy.jump(self.label)
-JumpException: Oh jeez...I didn't break anything, did I? Hold on a sec, I can probably fix this...I think...
+  File "renpy/common/00console.rpy", line 297, in interact
+    self.run(lines)
+  File "renpy/common/00console.rpy", line 347, in run
+    renpy.call(name)
+CallException: Oh jeez...I didn't break anything, did I? Hold on a sec, I can probably fix this...I think...
 Actually, you know what? This would probably be a lot easier if I just deleted her. She's the one who's making this so difficult. Ahaha! Well, here goes nothing.
 
 -- Full Traceback ------------------------------------------------------------
@@ -35,33 +35,13 @@ Full traceback:
     exec bytecode in globals, locals
   File "renpy/common/00console.rpy", line 694, in <module>
     console.interact()
-  File "renpy/common/00console.rpy", line 275, in interact
-    line = ui.interact()
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/ui.py", line 285, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/core.py", line 2526, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/core.py", line 3204, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/layout.py", line 960, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/layout.py", line 960, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/layout.py", line 960, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/screen.py", line 651, in event
-    rv = self.child.event(ev, x, y, st)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/layout.py", line 960, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/behavior.py", line 430, in event
-    rv = run(action)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/behavior.py", line 306, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00action_control.rpy", line 81, in __call__
-    renpy.jump(self.label)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/exports.py", line 1576, in jump
-    raise renpy.game.JumpException(label)
-JumpException: Oh jeez...I didn't break anything, did I? Hold on a sec, I can probably fix this...I think...
+  File "renpy/common/00console.rpy", line 297, in interact
+    self.run(lines)
+  File "renpy/common/00console.rpy", line 347, in run
+    renpy.call(name)
+  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/exports.py", line 1599, in call
+    raise renpy.game.CallException(label, args, kwargs)
+CallException: Oh jeez...I didn't break anything, did I? Hold on a sec, I can probably fix this...I think...
 Actually, you know what? This would probably be a lot easier if I just deleted her. She's the one who's making this so difficult. Ahaha! Well, here goes nothing.
 
 Darwin-20.6.0-x86_64-i386-64bit

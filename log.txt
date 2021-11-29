@@ -1,36 +1,36 @@
-Fri Nov 26 11:51:08 2021
+Fri Nov 26 14:02:47 2021
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 6.99.12.4.2187
  
 
 Bootstrap to the start of init.init took 0.05s
-Early init took 0.14s
-Loader init took 0.38s
-Loading error handling took 0.12s
-Loading script took 2.72s
-Loading persistent took 0.05s
+Early init took 0.02s
+Loader init took 0.11s
+Loading error handling took 0.07s
+Loading script took 0.96s
+Loading persistent took 0.03s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.45s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.04s
+Running init code took 0.21s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.03s
 Index archives took 0.00s
 Dump and make backups. took 0.00s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.99s
+Creating interface object took 0.53s
 Cleaning stores took 0.00s
-Init translation took 0.13s
+Init translation took 0.09s
 Build styles took 0.00s
-Load screen analysis took 0.06s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.03s
+Prepare screens took 0.04s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.02s
+Interface start took 0.01s
 
 primary display bounds: (0, 0, 2048, 1152)
 Windowed mode.
@@ -189,73 +189,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 11.1753840446s
+Total time until interface ready: 5.54066085815s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.005710 seconds.
-- Frame drawn at 0.007281 seconds.
-- Frame drawn at 0.008875 seconds.
-- Frame drawn at 0.009895 seconds.
-- 0.009895 seconds to render 5 frames.
-The window was minimized.
-The window was restored.
-Traceback (most recent call last):
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/execution.py", line 438, in run
-    node.execute()
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/python.py", line 1719, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/00console.rpy", line 694, in <module>
-    console.interact()
-  File "renpy/common/00console.rpy", line 275, in interact
-    line = ui.interact()
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/ui.py", line 285, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/core.py", line 2526, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/core.py", line 3204, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/layout.py", line 960, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/layout.py", line 960, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/layout.py", line 960, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/screen.py", line 651, in event
-    rv = self.child.event(ev, x, y, st)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/layout.py", line 960, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/behavior.py", line 430, in event
-    rv = run(action)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/behavior.py", line 306, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00action_control.rpy", line 81, in __call__
-    renpy.jump(self.label)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/exports.py", line 1576, in jump
-    raise renpy.game.JumpException(label)
-JumpException: _console_return
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-The window was minimized.
-Traceback (most recent call last):
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/execution.py", line 438, in run
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/ast.py", line 814, in execute
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/python.py", line 1719, in py_exec_bytecode
-  File "renpy/common/_layout/screen_main_menu.rpym", line 30, in <module>
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/ui.py", line 285, in interact
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/core.py", line 2526, in interact
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/display/core.py", line 3071, in interact_core
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/audio/audio.py", line 864, in periodic
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/audio/audio.py", line 403, in periodic
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/audio/audio.py", line 67, in load
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/loader.py", line 539, in load
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/loader.py", line 480, in load_core
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/loader.py", line 615, in transfn
-Exception: Couldn't find file 'audio.rpa'.
-The window was restored.
+- Frame drawn at 0.015382 seconds.
+- Frame drawn at 0.032220 seconds.
+- Frame drawn at 0.048519 seconds.
+- Frame drawn at 0.067639 seconds.
+- 0.067639 seconds to render 5 frames.

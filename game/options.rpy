@@ -12,7 +12,7 @@
 
 
 
-define config.name = "Doki Doki Literature Club!"
+define config.name = "Doki Doki Sussy Club!"
 
 
 
@@ -36,7 +36,7 @@ define gui.about = _("")
 
 
 
-define build.name = "DDLC"
+define build.name = "DDSC"
 
 
 
