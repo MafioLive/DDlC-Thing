@@ -1,49 +1,43 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 75, in script call
-    call ch10_main
-  File "game/script-ch10.rpy", line 8, in script call
-    with dissolve_scene_half
+  File "game/script.rpy", line 34, in script call
+    call poem
+  File "game/script-poemgame.rpy", line 196, in script call
+    python:
   File "renpy/common/00console.rpy", line 693, in script call
     python in _console:
-  File "game/script-ch5.rpy", line 291, in script
+  File "game/script.rpy", line 34, in script call
+    call poem
+  File "game/script-poemgame.rpy", line 196, in script call
     python:
-  File "renpy/common/00console.rpy", line 694, in <module>
-    console.interact()
-  File "renpy/common/00console.rpy", line 297, in interact
-    self.run(lines)
-  File "renpy/common/00console.rpy", line 347, in run
-    renpy.call(name)
-CallException: Oh jeez...I didn't break anything, did I? Hold on a sec, I can probably fix this...I think...
-Actually, you know what? This would probably be a lot easier if I just deleted her. She's the one who's making this so difficult. Ahaha! Well, here goes nothing.
+  File "renpy/common/00console.rpy", line 693, in script call
+    python in _console:
+ScriptError: could not find label 'glitchpoem'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 75, in script call
-    call ch10_main
-  File "game/script-ch10.rpy", line 8, in script call
-    with dissolve_scene_half
+  File "game/script.rpy", line 34, in script call
+    call poem
+  File "game/script-poemgame.rpy", line 196, in script call
+    python:
   File "renpy/common/00console.rpy", line 693, in script call
     python in _console:
-  File "game/script-ch5.rpy", line 291, in script
+  File "<string>", line 1, in script call
+  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/ast.py", line 1322, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 34, in script call
+    call poem
+  File "game/script-poemgame.rpy", line 196, in script call
     python:
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/python.py", line 1719, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/00console.rpy", line 694, in <module>
-    console.interact()
-  File "renpy/common/00console.rpy", line 297, in interact
-    self.run(lines)
-  File "renpy/common/00console.rpy", line 347, in run
-    renpy.call(name)
-  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/exports.py", line 1599, in call
-    raise renpy.game.CallException(label, args, kwargs)
-CallException: Oh jeez...I didn't break anything, did I? Hold on a sec, I can probably fix this...I think...
-Actually, you know what? This would probably be a lot easier if I just deleted her. She's the one who's making this so difficult. Ahaha! Well, here goes nothing.
+  File "renpy/common/00console.rpy", line 693, in script call
+    python in _console:
+  File "<string>", line 1, in script call
+  File "/Users/ROSEW/Library/Application Support/Steam/steamapps/common/Doki Doki Literature Club/renpy/script.py", line 858, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'glitchpoem'.
 
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 6.99.12.4.2187
-Doki Doki Literature Club! 1.1.1
+Doki Doki Sussy Club! 1.1.1

@@ -604,7 +604,7 @@ style main_menu_title:
 screen game_menu_m():
     $ persistent.menu_bg_m = True
     add "gui/menu_bg_m.png"
-    timer 0.3 action Hide("game_menu_m")
+    timer 120 action Hide("game_menu_m")
 
 screen game_menu(title, scroll=None):
 
@@ -662,7 +662,7 @@ screen game_menu(title, scroll=None):
 
     use navigation
 
-    if not main_menu and persistent.playthrough == 2 and not persistent.menu_bg_m and renpy.random.randint(0, 49) == 0:
+    if not main_menu and persistent.playthrough == 2 and renpy.random.randint(0, 1) == 0:
         on "show" action Show("game_menu_m")
 
     textbutton _("Return"):
